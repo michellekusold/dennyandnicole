@@ -17,3 +17,6 @@ amplitude_config = {
             "amplitude_volume": 25,
             "amplitude_continue_next": true
         }
+window.onload = function(){
+TweenLite.to("#shoe", 10, {rotation:"-360", transformOrigin:"0% 100%"});
+}
