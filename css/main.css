@@ -103,6 +103,7 @@ html, body{
         overflow:auto;
         background-color: #F3DDDB;
         color:white;
+        font-family: 'PT Sans', sans-serif;
     }
     #skroll-container{
         width:100%;
@@ -127,58 +128,58 @@ html, body{
 
     /* SKROLR DIVISIONS */
     #first{
-        z-index: 11;
+        z-index: 12;
     }
     #second{
         background-image: url('../img/cle.jpg');
-        z-index: 10;
+        z-index: 11;
     }
     #third{
-        z-index: 9;
+        z-index: 10;
     }
     #fourth{
         background-image: url('../img/colorMap.jpg');
-        z-index: 8;
+        z-index: 9;
     }
     #fifth{
         background-image: url('../img/river.jpg');
         position: relative;
-        z-index: 7;
+        z-index: 8;
     }
     #sixth{
-        z-index: 6;
+        z-index: 7;
     }
     #seventh{
-        background-image: url('../img/kurentDance.jpg');
-        z-index: 5;
+        background-image: url('../img/sloHome.png');
+        z-index: 6;
     }
     #eighth{
-        z-index: 4;
+        z-index: 5;
     }
     #nineth{
         background-image: url('../img/cleDusk.jpg');
-        z-index: 3;
+        z-index: 4;
     }
     #tenth{
-        z-index: 2;
+        z-index: 3;
     }
     #eleventh{
         background-image: url('../img/fixing.jpg');
-        z-index: 1;
+        z-index: 2;
     }
     #twelveth{
-        z-index: 0;
+        z-index: 1;
     }
     #thirteenth{
         background-image: url('../img/wedding/sideBike.jpg');
-        z-index: -1;
+        z-index: 0;
     }
 
     /* FONT AND TYPOGRAPHICAL ELEMENTS */
     h1{
         font-family: 'Great Vibes', cursive;
         text-align: center;
-        font-size: 8em;
+        font-size: 11vw;
         color:#4C848D;
         margin-top:3%;
         margin-bottom:0%;
@@ -186,7 +187,7 @@ html, body{
     .subtitle{
         font-family: 'Great Vibes', cursive;
         text-align: center;
-        font-size: 3em;
+        font-size: 7vw;
         color:#F3DDDB;
         background-color:#4C848D;
         margin-top:1%;
@@ -195,7 +196,7 @@ html, body{
     h2{
         font-family: 'Great Vibes', cursive;
         text-align: center;
-        font-size: 5em;
+        font-size: 9vw;
         color:#F3DDDB;
         background-color:#4C848D;
         margin-bottom: 1%;
@@ -215,10 +216,19 @@ html, body{
         min-width: 250px;
         text-align: center;
     }
-
-    .info ul{
-        padding-bottom: 40%;
+    .info p{
+        font-size: 2.5vw;
     }
+
+    .info a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #B6B2C9;
+    }
+    .info a:hover{
+        color:#5b5964;
+    }
+
 
     .info img{
         height: 20%;
@@ -234,27 +244,17 @@ html, body{
     }
 
     /* OTHER ETHNIC STYLINGS */
-    #greek{
-        float: left;
-        left:0;
-        width:40%;
-        min-width: 200px;
-        padding: 0% 5%;
-        position: relative !important;
-        text-align: center;
-    }
-    #greek img{
-        height:100px;
-        width:300px;
-        display:block;
-        margin-left: auto;
-        margin-right: auto;
+    #slogreek{
+        clear:both;
+        width:100%;
+        height:50%;
     }
     #slovenian{
         float: left;
+        left:0;
         width:40%;
-        min-width:200px;
-        right:0;
+        height:60% !important;
+        min-width: 200px;
         padding: 0% 5%;
         position: relative !important;
         text-align: center;
@@ -266,7 +266,29 @@ html, body{
         margin-left: auto;
         margin-right: auto;
     }
+    #greek{
+        float: left;
+        width:40%;
+        min-width:200px;
+        right:0;
+        height:60% !important;
+        padding: 0% 5%;
+        position: relative !important;
+        text-align: center;
+    }
+    #greek img{
+        height:100px;
+        width:300px;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    #scroller{
+        right: 0;
+        padding-right: 3%;
+        top: 50%;
+    }
     /* TANDEM */
     #bike_wrapper{
         z-index:20;
@@ -277,46 +299,9 @@ html, body{
         left:7%;
         width:50%;
         height:60%;
+        z-index: 100;
     }
 
-    /* TANDEM ANIMATIONS *//*
-    #thigh{
-        -webkit-transform-origin: 50% 100%;
-        -webkit-animation: breeze 2s ease-out infinite;
-        -moz-transform-origin: 50% bottom;
-        /*-moz-animation: breeze 2s ease-out infinite;*/
-    }
-/*
-    #thigh_1_{
-        -webkit-transform-origin: 50% 100%;
-        -webkit-animation: breeze 2s ease-out infinite;
-        -moz-transform-origin: 50% bottom;
-        /*-moz-animation: breeze 2s ease-out infinite;*/
-    }
-/*
-    @-webkit-keyframes breeze{
-        0% {
-            -webkit-transform: rotate(0deg);
-        }
-        50% {
-            -webkit-transform: rotate(10deg);
-        }
-        100% {
-            -webkit-transform: rotate(0deg);
-        }
-    }
-        
-    @-moz-keyframes breeze{
-        0% {
-            -moz-transform: rotate(0deg);
-        }
-        50% {
-            -moz-transform: rotate(10deg);
-        }
-        100% {
-            -moz-transform: rotate(0deg);
-        }
-    }*/
 
     /* AUDIO CONTROLS */
     #amplitude-play-pause{
@@ -360,7 +345,7 @@ html, body{
     height:50px !important;
     margin:1%;
     bottom:0;
-    z-index: 12;
+    z-index: 13;
     }
 
     #player-top{
@@ -368,7 +353,31 @@ html, body{
         height:100%;
     }
 
+/* Mobile Friendly */
+@media (max-width: 500px){
+    h2{
+        font-size: 8vw;
+    }
+    .info{
+        width:100%;
+        height:95% !important;
+        margin:0px;
+        margin-top: 2.5%;
+        padding:0px;
+    }
+    .info p{
+        font-size: 4vw;
+    }
+    #slovenian, #greek{
+        padding:0px;
+        width:100%;
+        height:20% !important;
+    }
+    #slogreek{
+        height:30% !important;
+    }
 
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
