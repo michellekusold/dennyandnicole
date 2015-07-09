@@ -126,6 +126,29 @@ html, body{
         white-space: nowrap;
     }
 
+    /* AUTO SCROLL BUTTON */
+    #scroller{
+        width: 80px;
+        height: 80px;
+        cursor: pointer;
+        z-index: 25;
+    }
+
+    #scrollerContainer{
+    width: 80px !important;
+    height:80px !important;
+    margin:1%;
+    bottom:50%;
+    z-index: 15;
+    right:0;
+    }
+
+    #scrl{
+        width:100%;
+    }
+
+
+
     /* SKROLR DIVISIONS */
     #first{
         z-index: 12;
@@ -173,6 +196,9 @@ html, body{
     #thirteenth{
         background-image: url('../img/wedding/sideBike.jpg');
         z-index: 0;
+    }
+    #thirteenth h2{
+        font-size: 6vw;
     }
 
     /* FONT AND TYPOGRAPHICAL ELEMENTS */

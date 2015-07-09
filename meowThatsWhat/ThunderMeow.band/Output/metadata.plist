@@ -13,15 +13,15 @@
 	<key>com_apple_garageband_metadata_mediaTrackType</key>
 	<string>Undefined</string>
 	<key>com_apple_garageband_metadata_numberOfArrangeTracks</key>
-	<integer>3</integer>
+	<integer>4</integer>
 	<key>com_apple_garageband_metadata_numberOfRITracks</key>
-	<integer>3</integer>
+	<integer>4</integer>
 	<key>com_apple_garageband_metadata_numberOfSITracks</key>
 	<integer>0</integer>
 	<key>com_apple_garageband_metadata_parentalAdvisory</key>
 	<string>None</string>
 	<key>com_apple_garageband_metadata_songDuration</key>
-	<real>298</real>
+	<real>298.16145124716553</real>
 	<key>com_apple_garageband_metadata_songGender</key>
 	<string>major</string>
 	<key>com_apple_garageband_metadata_songKey</key>

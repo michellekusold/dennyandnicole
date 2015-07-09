@@ -33,6 +33,12 @@
    			<source src="audio/lullatone.mp3" type="audio/mp3"/>
 		</audio> 
 
+        <div id="scrollerContainer">
+            <div id="scrl">
+               <img id="scroller" src="img/nextArrow.svg"></img>
+            </div>
+        </div>
+
 	    <div id="bike_wrapper" data-smooth-scrolling="off">
 	    	
 	    	<!-- START TANDEM SVG CODE -->
@@ -121,9 +127,6 @@
     			Denny and Nicole
     			<span class="heart">♥</span>
     	</h1>
-    	<div id="scroller">
-    		<img src="img/scroll.svg"></img>
-    	</div>
     	</div>
 
     	<div id="second" class="pic-bkgrnd" data-1000="width:100%;" data-2000="width:0%;"><h2>Join us on August 22nd 2015</h2>
@@ -192,9 +195,15 @@
     			<h2 class="subtitle">Lodging &amp; Adventure</h2>
     			<h3>Lodging</h3>
     			<ul>
-    				<li>Wyndham Hotel</li>
-    				<li><a href="http://www.theclevelandhostel.com" target="_blank">Cleveland Hostel</a></li>
-    				<li><a href="http://www.northcoastharbor.org" target="_blank">By Boat</a></li>
+    				<li>Wyndham Cleveland at Playhouse Square</li>
+                    <li>1260 Euclid Ave, Cleveland, OH 44115</li>
+                    <li>For your comfort and convenience we have made the following hotel arrangements. A limited number of rooms have been reserved at a special rate for this occasion. These rates are available until July 31st by mentioning the Kusold-Matheou wedding.
+                    </li>
+                    <li>A shuttle bus will provide transportation between the reception and the hotel from 11:30 pm to 1:30 am.
+                    </li>
+                    <li>Reservations can be made by calling 216.615.7500
+                    </li>
+                    <a href="http://www.wyndhamcleveland.com" target="_blank">wyndhamcleveland.com</a>
 				</ul>
 				<h3>Things to do in Cleveland</h3>
 				<ul>
@@ -237,7 +246,6 @@
 					</ul>
     		</div>
     	</div>
-        <!--
     	<div id="eleventh" class="pic-bkgrnd" data-10000="width:100%;" data-11000="width:0%;">
     		<h2>Registry</h2>
     	</div>
@@ -245,12 +253,11 @@
     		<div class="info">
     			<h2 class="subtitle">Thank you</h2>
     			<ul>
-    				<li><a href="http://www.crateandbarrel.com/Gift-Registry/nicole-kusold-and-denny-matheou/r5238626">Crate and Barrel</a></li>
-					<li><a href="http://www.amazon.com/registry/wedding/33PRVBCEBMQ4V">Amazon</a></li> 
+    				<li><a href="http://www.crateandbarrel.com/Gift-Registry/nicole-kusold-and-denny-matheou/r5238626" target="_blank">Crate and Barrel</a></li>
+					<li><a href="http://www.amazon.com/registry/wedding/33PRVBCEBMQ4V" target="_blank">Amazon</a></li> 
 				</ul>
     		</div>
     	</div>
-    -->
     	<!--<div id="thirteenth" class="pic-bkgrnd" data-12000="width:100%;">-->
         <div id="thirteenth" class="pic-bkgrnd" data-10000="width:100%;">
     		<h2>We can't wait to See you There!</h2>
@@ -260,13 +267,15 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<!-- remove for real one? -->
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/amp.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="js/vendor/skrollr.min.js"></script>
     <script type="text/javascript" src="js/vendor/amplitude.min.js"></script>
 	<script type="text/javascript">
-	skrollr.init({
+	var s = skrollr.init({
 		forceHeight: false,
 		easing: {
 			WTF: Math.random,
@@ -275,6 +284,17 @@
 			}
 		}
 	});
+
+    $(document).ready(function(){
+         $("#scroller").click(function() {
+            var scroll = $(window).scrollTop();
+            console.log(scroll);
+            if(scroll < 13000){
+             scroll = scroll + 1000;
+             $(window).scrollTop(scroll);
+            }
+        });
+    });
 	</script>
 	<!--<script type="text/javascript" src="js/vendor/gsap/plugins/CSSPlugin.min.js"></script>
 	<script type="text/javascript" src="js/vendor/gsap/TweenLite.min.js"></script>

@@ -20,9 +20,5 @@ skrollr.init({
             }
         }
 });
-
-$( "#scroller" ).click(function() {
-  skrollr.animateTo(400);
-});
-
 }
+
